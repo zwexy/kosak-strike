@@ -237,6 +237,24 @@ target_sources(${OUTBINNAME} PRIVATE "${SRCDIR}/game/shared/cstrike15/gametypes.
     target_sources(${OUTBINNAME} PRIVATE "cstrike15/cs_hud_weaponselection.cpp")
     target_sources(${OUTBINNAME} PRIVATE "cstrike15/hud_flashbang.cpp")
     target_sources(${OUTBINNAME} PRIVATE "cstrike15/radio_status.cpp")
+    #CSSHUD
+if( NOT USE_SCALEFORM AND NOT USE_ROCKETUI )
+    target_sources(${OUTBINNAME} PRIVATE "cstrike15/hud_c4.cpp")
+    target_sources(${OUTBINNAME} PRIVATE "cstrike15/hud_defuser.cpp")
+    target_sources(${OUTBINNAME} PRIVATE "cstrike15/hud_hostagerescue.cpp")
+    target_sources(${OUTBINNAME} PRIVATE "cstrike15/hud_shopping_cart.cpp")
+    target_sources(${OUTBINNAME} PRIVATE "cstrike15/hud_progressbar.cpp")
+    target_sources(${OUTBINNAME} PRIVATE "cstrike15/hud_scenarioicon.cpp")
+    target_sources(${OUTBINNAME} PRIVATE "cstrike15/hud_roundtimer.cpp")
+    target_sources(${OUTBINNAME} PRIVATE "cstrike15/hud_deathnotice.cpp")
+    target_sources(${OUTBINNAME} PRIVATE "cstrike15/cs_hud_health.cpp")
+    target_sources(${OUTBINNAME} PRIVATE "cstrike15/hud_armor.cpp")
+    target_sources(${OUTBINNAME} PRIVATE "cstrike15/cs_hud_ammo.cpp")
+    target_sources(${OUTBINNAME} PRIVATE "hud_base_account.cpp")
+    target_sources(${OUTBINNAME} PRIVATE "cstrike15/hud_account.cpp")
+    target_sources(${OUTBINNAME} PRIVATE "cstrike15/cs_hud_damageindicator.cpp")
+    target_sources(${OUTBINNAME} PRIVATE "cstrike15/cs_hud_target_id.cpp")
+endif()
 #}
 
 #$Folder "Weapon"

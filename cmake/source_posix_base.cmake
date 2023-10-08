@@ -22,7 +22,7 @@ endif(NOT CMAKE_BUILD_TYPE)
 #-Werror=return-type - Set these warnings to ERRORS because they can ruin your stack/day
 if(NOT WIN32)
 	set(LINUX_FLAGS_COMMON " -ffast-math -march=native -Wno-invalid-offsetof -Wno-ignored-attributes -Wno-enum-compare -Werror=return-type ")
-	set(LINUX_DEBUG_FLAGS " -ggdb -g3 -fno-eliminate-unused-debug-symbols ")
+	set(LINUX_DEBUG_FLAGS " -ggdb -g1") #3 -fno-eliminate-unused-debug-symbols
 endif()
 
 if( MSVC )
